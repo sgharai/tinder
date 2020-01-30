@@ -1,9 +1,7 @@
-import React, {Component} from "react"
+import React, {Component} from 'react'
 
 class Settings extends Component {
-    constructor() {
-        super()
-        this.state = {
+    state = {
             bio: "",
             otherPics: [],
             notifications: false,
@@ -11,8 +9,6 @@ class Settings extends Component {
             ageRange: [18, 80],
             distance: [0, 10]
         }
-        this.handleChange = this.handleChange.bind(this)
-    }
     
     handleChange(event) {
         const {name, value, type, checked} = event.target

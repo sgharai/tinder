@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Person from './components/Person';
 import Lonely from './components/Lonely';
+import Settings from './components/Settings'
 import data from './data.json';
 
 const App = () => {
