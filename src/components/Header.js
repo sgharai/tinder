@@ -1,10 +1,17 @@
 import React from 'react';
 import Logo from './Logo';
+import Settings from './Settings'
 
-const Header = () => (
+const Header = () => {
+
+  const handleClick = () => <Settings />
+
+
+  return (
+
   <header>
     <div className="fl">
-      <button type="button">
+      <button type="button" onClick={handleClick}>
         <img src="/images/misc/user.png" alt="User Settings" />
       </button>
     </div>
@@ -19,6 +26,9 @@ const Header = () => (
       </button>
     </div>
   </header>
-);
+  )
+  
+}
+
 
 export default Header;
